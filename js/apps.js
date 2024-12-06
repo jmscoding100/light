@@ -1,18 +1,30 @@
-const onBtn = document.getElementById('onBtn')
-const offBtn = document.getElementById('offBtn')
+const btnOne = document.getElementById('btnOne')
+const btnTwo = document.getElementById('btnTwo')
 // const main = document.getElementById('main')
-const body = document.getElementById('body')
 
-onBtn.addEventListener('click', (e)=>{
-    e.preventDefault()
+let body = document.getElementById('light')
+body = false
+
+
+
+btnOne.addEventListener('click', (e)=>{
+    // e.preventDefault()
+    body = !body
+    if(body){
+        document.body.style.backgroundColor = 'white'
+    }else{
+        document.body.style.backgroundColor = 'black'
+    }
     // console.log('click')
-    body.style.backgroundColor = 'white'
 })
 
-
-offBtn.addEventListener('click', (e)=>{
-    e.preventDefault()
+btnTwo.addEventListener('click', (e)=>{
+    // e.preventDefault()
+    body = !body
+    if(body){
+        document.body.style.backgroundColor = 'white'
+    }else{
+        document.body.style.backgroundColor = 'black'
+    }
     // console.log('click')
-    body.style.backgroundColor = 'black'
 })
-
